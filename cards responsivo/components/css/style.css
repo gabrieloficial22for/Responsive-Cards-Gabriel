@@ -1,0 +1,342 @@
+@charset "UTF-8";
+
+@import url(../css/fonts.css);
+
+* {
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+} 
+
+/* & color */
+
+:root {
+
+    --color-text-padrao: #ffffff;
+    --bg-color-body: #cccccc;
+    --color-text: #434343;
+    --bg-color-section_card: #dcdcdc;
+    --color-boder-purple: #a16aff;
+    --color-boder-Blue: #4099fe;
+    --color-boder-Pink: #fe90b2;
+
+    --color-text-purple: #a16aff;
+    --color-text-blue: #4099fe;
+    --color-text-pink: #fe90b2;
+
+}
+
+body {
+
+    background-image: url("../../assets/img/fundo-cards-responsivos-2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text);
+
+}
+
+main.cards {
+
+    display: flex;
+    padding: 32px;
+    /* gap: 2; */
+
+}
+
+main.cards h3 {
+
+    font-family: "Poppins-Bold", sans-serif;
+    margin: 0.5rem 0.5rem;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+main.cards span {
+
+    font-family: "Poppins-Medium", sans-serif, Arial;
+    font-size: 18px;
+    font-weight: 500;
+    max-width: 440px;
+
+
+}
+
+main.cards section.card .icon {
+
+    width: 64px;
+    height: 64px;
+
+}
+
+main.cards section.card .icon img{
+
+    width: 100%;
+
+}
+
+main.cards section.card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-color-section_card);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 256px;
+    margin-left: 32px;
+    -webkit-box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.68); 
+    box-shadow: 10px 10px 18px -7px rgba(0,0,0,0.68);
+
+}
+
+main.cards section.card:first-child {
+
+    margin-left: 0;
+
+}
+
+main.cards section.card button {
+
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    margin: 1rem;
+    font-size: 70%;
+    font-weight: bolder;
+    font-family: "Poppins-Bold", sans-serif;
+    transition: 1.2s all ease-in-out;
+    transition-duration: 1.6s;
+    -webkit-box-shadow: 4px 4px 17px -4px rgba(0,0,0,0.55); 
+    box-shadow: 4px 4px 17px -4px rgba(0,0,0,0.55);
+
+}
+
+main.cards section.card button.roxo {
+
+    border: 1.5px solid var(--color-boder-purple);
+    color: var(--color-text-purple);
+
+}
+
+main.cards section.card button.roxo:hover {
+
+    background-color: var(--color-boder-purple);
+    color: var(--color-text-padrao);
+
+}
+
+main.cards section.card button.azul {
+
+    border: 1.5px solid var(--color-boder-Blue);
+    color: var(--color-text-blue);
+
+}
+
+main.cards section.card button.azul:hover {
+
+    background-color: var(--color-boder-Blue);
+    color: var(--color-text-padrao);
+
+}
+
+main.cards section.card button.rosa {
+
+    border: 1.5px solid var(--color-boder-Pink);
+    color: var(--color-text-pink);
+
+}
+
+main.cards section.card button.rosa:hover {
+
+    background-color: var(--color-boder-Pink);
+    color: var(--color-text-padrao);
+
+}
+
+/* & RESPONSIVIDADE DA PAGINA */
+
+@media screen and (max-width: 1030px ){
+    
+    
+    main.cards {
+
+        flex-direction: row;
+
+
+    }
+
+    main.cards section.card {
+
+        margin-left: 32px;
+        width: 70%;
+        height: 70vh;
+
+    }
+
+    main.cards section.card:first-child {
+
+        margin-right: 0;
+
+
+    }
+
+    main.cards section.card .icon {
+
+        width: 20%;
+        height: 20vh;
+
+    }
+
+    main.cards section.card h3 {
+
+        font-size: 50%;
+        font-weight: bold;
+        margin-top: -1.5rem;
+
+    }
+
+    main.cards section.card span {
+
+        font-size: 40%;
+
+    }
+
+    main.cards section.card button {
+
+        font-size: 60%;
+        font-weight: 900;
+        padding: 0.3rem 1.5rem;
+
+    }
+
+}
+
+@media screen and (max-width: 719px ) {
+
+    main.cards {
+
+        flex-direction: row;
+
+
+    }
+
+    main.cards section.card {
+
+        margin-left: 30px;
+        width: 60%;
+        height: 60vh;
+
+    }
+
+    main.cards section.card:first-child {
+
+        margin-right: 0;
+
+
+    }
+
+    main.cards section.card .icon {
+
+        width: 18%;
+        height: 18vh;
+
+    }
+
+    main.cards section.card h3 {
+
+        font-size: 30%;
+        font-weight: 900;
+        margin-top: -1.5rem;
+
+    }
+
+    main.cards section.card span {
+
+        font-size: 20%;
+
+    }
+
+    main.cards section.card button {
+
+        font-size: 10%;
+        font-weight: 400;
+        padding: 0.1rem 0.4rem;
+
+    }
+
+
+}
+
+@media screen and (max-width: 755px ) {
+
+    main.cards {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 7rem 0rem;
+
+    }
+
+    main.cards section.card {
+
+        margin-bottom: 50px;
+        margin-left: 0;
+        margin: 2rem 0rem;
+        width: 60%;
+        height: 60vh;
+
+    }
+
+    main.cards section.card:last-child {
+
+        margin-bottom: 0;
+
+
+    }
+
+    main.cards section.card .icon {
+
+        width: 20%;
+        height: 30vh;
+
+    }
+
+    main.cards section.card h3 {
+
+        font-size: 70%;
+        font-weight: bold;
+        margin-top: -1.5rem;
+
+    }
+
+    main.cards section.card span {
+
+        font-size: 40%;
+
+    }
+
+    main.cards section.card button {
+
+        font-size: 10%;
+        font-weight: 400;
+        padding: 0.1rem 0.4rem;
+
+    }
+
+
+}
